@@ -1,3 +1,7 @@
+=========================
+ Django Project Template
+=========================
+
 1. apps - folder for storing projectcs apps
 2. backend - django projects primary folder (with settings, main urls.py, etc.)
 3. env - folder with server & supervisor config
