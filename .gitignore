@@ -1,0 +1,3 @@
+*.py[co]
+backend/settings/development.py
+data
