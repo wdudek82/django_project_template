@@ -5,7 +5,7 @@
 
 1. backend - django projects primary folder (with settings, main urls.py, etc.)
 2. env - folder with server & supervisor config
-3. project - folder for storing projectcs apps
+3. project - folder for storing projectcs apps - has its own setting.py and urls.py
 4. var - store log folder
 5. venv - clean virtual environment
 
