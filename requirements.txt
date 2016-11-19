@@ -1,0 +1,4 @@
+Django==1.10.2
+django-debug-toolbar==1.6
+django-hosts==2.0
+ipython==5.1.0

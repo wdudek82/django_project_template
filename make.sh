@@ -1,4 +1,5 @@
 #!/usr/bin/bash
 
-virtualenv venv -p python3 && . venv/bin/activate
+virtualenv venv -p python3
+. venv/bin/activate
 pip install -r requirements.txt
