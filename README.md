@@ -4,13 +4,13 @@
 
 root folder
 -----------
-1. backend - django projects primary folder (with settings, main urls.py, etc.)
-2. env - folder with server & supervisor config
-3. project - folder for storing projectcs apps - has its own setting.py and urls.py
-4. var - store log folder
-5. venv - directory containing virtual environment
-6. make.sh - creates virtual environment & install all requirements
-6. run.sh - shortcut to start venv in more convenient way
+1. apps - folder for storing projectcs apps - has its own setting.py and urls.py
+2. backend - django projects primary folder (with settings, main urls.py, etc.)
+3. env - folder with server & supervisor config
+4. make.sh - creates virtual environment & install all requirements
+5. run.sh - shortcut to start venv in more convenient way
+6. var - store log folder
+7. venv - directory containing virtual environment
 
 
 Installation
