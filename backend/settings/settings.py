@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '4zhq(hfax1mhx8adf0qvy6-j4p$2!^p#9^!!xw!vt!cmud(#7#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -127,7 +127,14 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'backend', 'media')
 
 
-try:
-    from .development import *
-except ImportError as e:
-    print(e)
+# Additional settings:
+if DEBUG:
+    try:
+        from .development import *
+    except ImportError as e:
+        print('Uh-oh!: {}', e)
+else:
+    try:
+        from .production import *
+    except ImportError as e:
+        print('Uh-oh!: ', e)
