@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
 import os
-from project.settings import PROJECT_INSTALLED_APPS
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -26,7 +26,7 @@ SECRET_KEY = '4zhq(hfax1mhx8adf0qvy6-j4p$2!^p#9^!!xw!vt!cmud(#7#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -38,7 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-] + PROJECT_INSTALLED_APPS
+
+    # Thirdparty
+
+    # Project's apps
+    # 'apps.example_app',
+]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -132,9 +137,9 @@ if DEBUG:
     try:
         from .development import *
     except ImportError as e:
-        print('Uh-oh!: {}', e)
+        print('Uh-oh!:', e)
 else:
     try:
         from .production import *
     except ImportError as e:
-        print('Uh-oh!: ', e)
+        print('Uh-oh!:', e)
