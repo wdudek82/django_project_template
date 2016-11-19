@@ -4,7 +4,7 @@
 
 root folder
 -----------
-1. apps - folder for storing projectcs apps - has its own setting.py and urls.py
+1. apps - folder for storing projectcs apps
 2. backend - django projects primary folder (with settings, main urls.py, etc.)
 3. env - folder with server & supervisor config
 4. make.sh - creates virtual environment & install all requirements

@@ -125,11 +125,15 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'backend', 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'backend', 'static_root')
+
+STATICFILES_DIRS = (
+        os.path.join('apps', 'static'),
+    )
 
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'backend', 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'backend', 'media_root')
 
 
 # Additional settings:

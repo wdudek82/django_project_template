@@ -2,6 +2,9 @@
 
 __pycache__
 backend/settings/development.py
-venv
+backend/static_root
+backend/media_root
 data
+venv
+
 
