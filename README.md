@@ -9,18 +9,18 @@ root folder
 3. project - folder for storing projectcs apps - has its own setting.py and urls.py
 4. var - store log folder
 5. venv - clean virtual environment
+6. make.sh - creates virtual environment & install all requirements
 6. run.sh - shortcut to start venv in more convenient way
 
 
 Installation
 ------------
 
-1. Clone project from git (renaming it as you see fit):
+1. Clone Django Project Template from git (renaming it as you see fit),
 2. cd to its root folder,
-3. there activate virtualenv: . run.sh (or explicitly: . venv/bin/activate)
-4. after activating venv install projects dependencies: pip install -r requirements.txt
-5. in backend/settings/settings.py set DEBUG variable
-6. adjust config in backend/settings/development.py or backend/settings/production.py
+3. run make.sh (". make.sh") - it'll install virtual env (to venv folder) + all project's requirements, and finally activates it (later you can use run.sh or explicitly using . venv/bin/activate),
+4. in backend/settings/settings.py set DEBUG variable,
+5. adjust config in backend/settings/development.py or backend/settings/production.py,
 
 
 Database settings
