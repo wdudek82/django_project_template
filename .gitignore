@@ -2,6 +2,7 @@
 
 __pycache__
 backend/settings/development.py
+backend/settings/production.py
 backend/static_root
 backend/media_root
 data
